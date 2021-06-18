@@ -3,7 +3,7 @@ class Clock extends React.Component {
     componentDidMount() {
         this.intervalHandle =  setInterval(this.tick.bind(this), 1000)
     }
-
+    
     componentWillUnmount() {
         clearInterval(this.intervalHandle)
     }
@@ -28,8 +28,8 @@ class Clock extends React.Component {
         <div className="outer-container">
             <h1>Clock</h1>
             <div className="inner-clock-div">
-                <h1> <span className="label"> Time:</span> <span className="date-string">{this.state.time.toLocaleTimeString("ar-AF")}</span></h1>
-                    <h1> <span className="label"> Date:</span> <span className="date-string">{charArr.join("")}</span></h1>
+                <p> <span className="label"> Time:</span> <span className="date-string">{this.state.time.toLocaleTimeString("ar-AF")}</span></p>
+                <p> <span className="label"> Date:</span> <span className="date-string">{charArr.join("")}</span></p>
 
             </div>
         </div>);
