@@ -1,0 +1,27 @@
+h1 {
+    font-family: "Benne";
+    font-weight: bold;  
+    font-size: 50px; 
+}
+
+h1 .date-string {
+    
+}
+
+.outer-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inner-clock-div {
+    background-color: orange;
+    border: 2px solid black;
+    padding: 10px 40px;
+}
+
+.inner-clock-div h1 {
+    display: flex; 
+    justify-content: space-between;
+    color: white;
+    align-content: center;
+}
